@@ -1,33 +1,58 @@
-import { Container, Links } from "./styles"
+import { Container, Links, Content } from "./styles";
 
-import { Button } from "../../components/Button"
+import { Tag } from "../../components/Tag";
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Section } from "../../components/Section";
-import { Tag } from "../../components/Tag";
+import { ButtonText } from "../../components/ButtonText";
 
-export function Details () {
-
+export function Details() {
   return (
-    <Container >
-      <Header />
+    <Container>
+        <Header />
 
-      <Section title="Links úteis" >
-        <Links>
-          <li><a href="#">https://www.rocketseat.com.br</a></li>
-          <li><a href="#">https://www.rocketseat.com.br</a></li>
+      <main>
+        <Content>
+          <ButtonText title="Excluir Nota" />
 
-        </Links>
-      </Section>
+          <h1>
+            Introdução ao React
+          </h1>
 
-      <Section title="Marcadores" >
-        <Tag title="express"/>
-        <Tag title="nodejs"/>
-        
-      </Section>
-      
-      <Button title="Voltar" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Corrupti tempora repudiandae qui, ut voluptates modi asperiores debitis, 
+             fugiat laudantium, consequuntur dolor quam commodi? Sequi placeat aliquid 
+             explicabo fuga et eaque.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Corrupti tempora repudiandae qui, ut voluptates modi asperiores debitis, 
+             fugiat laudantium, consequuntur dolor quam commodi? Sequi placeat aliquid 
+             explicabo fuga et eaque.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Corrupti tempora repudiandae qui, ut voluptates modi asperiores debitis, 
+             fugiat laudantium, consequuntur dolor quam commodi? Sequi placeat aliquid 
+             explicabo fuga et eaque.
+          </p>
+
+          <Section title="Links úteis">
+            <Links>
+              <li>
+                <a href="#">https://www.rocketseat.com.br</a>
+              </li>
+              <li>
+                <a href="#">https://www.rocketseat.com.br</a>
+              </li>
+            </Links>
+          </Section>
+
+          <Section title="Marcadores">
+            <Tag title="express" />
+            <Tag title="nodejs" />
+          </Section>
+
+          <Button title="Voltar" />
+        </Content>
+      </main>
     </Container>
-  )
-
+  );
 }
-
