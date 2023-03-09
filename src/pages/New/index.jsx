@@ -1,6 +1,8 @@
-import { Header } from "./../../components/Header";
-import { Input } from "./../../components/Input";
-import { Textarea } from "./../../components/Textarea";
+import { Header } from "../../components/Header";
+import { Input } from "../../components/Input";
+import { Textarea } from "../../components/Textarea";
+import { NoteItem } from "../../components/NoteItem";
+import { Section } from "../../components/Section";
 
 
 import { Container, Form } from "./styles";
@@ -23,6 +25,13 @@ export function New (){
 
             <Input placeholder="Titulo" />
             <Textarea placeholder="observações" />
+
+            <Section title="Links úteis">
+
+              <NoteItem value="https://rocketseat.com.br" />
+              <NoteItem isNew placeholder="Novo link" />
+
+            </Section>
 
         </Form>
       </main>
