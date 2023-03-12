@@ -1,9 +1,11 @@
-import { Header } from "../../components/Header";
-import { Input } from "../../components/Input";
-import { Textarea } from "../../components/Textarea";
+import { Link } from 'react-router-dom';
+ 
 import { NoteItem } from "../../components/NoteItem";
+import { Textarea } from "../../components/Textarea";
 import { Section } from "../../components/Section";
 import { Button } from "../../components/Button";
+import { Header } from "../../components/Header";
+import { Input } from "../../components/Input";
 
 
 import { Container, Form } from "./styles";
@@ -20,7 +22,7 @@ export function New (){
           <header>
             <h1>Criar nota</h1>
 
-            <a href="/">voltar</a>
+            <Link to="/">voltar</Link>
 
           </header>
 
